@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pizza Order Form</h1>
+        <img height="300px" width="300px" src="pizza2.png">
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <form action="#" method="post">
+
+            <div class="fields">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+    
+                    <label for="address">Email:</label>
+                    <input type="email" id="mail" name="mail" required><br>
+    
+                    <label for="email">Address:</label>
+                    <textarea id="address" name="address" required></textarea><br>
+                </fieldset>
+    
+                <!-- Pizza Order -->
+                <fieldset>
+                    <legend>Pizza Order</legend>
+                    <label for="number">Number of Pizzas:</label>
+                    <input type="number" id="number" name="number" min="1" max="10" required><br>
+                    <label for="size">Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select><br>
+    
+                    <br>
+                    <label for="shape">Shape:</label><br>
+                    <input type="radio" id="round" name="shape" value="round" checked>
+                    <label for="round">Round</label><br>
+                    <input type="radio" id="square" name="shape" value="square">
+                    <label for="square">Square</label><br>
+                    <label for="toppings">Toppings:</label><br>
+                    <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br>
+                    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label><br>
+    
+                    <br>
+                    <label for="crust">Crust Type:</label><br>
+                    <input type="radio" id="deep-dish" name="crust" value="deep-dish" checked>
+                    <label for="deep-dish">Deep Dish</label><br>
+                    <input type="radio" id="thin-crust" name="crust" value="thin-crust">
+                    <label for="thin-crust">Thin Crust</label><br>
+    
+                    <br>
+                    <label for="delivery">Delivery Option:</label><br>
+                    <input type="radio" id="take-out" name="delivery" value="take-out" checked>
+                    <label for="take-out">Take Out</label><br>
+                    <input type="radio" id="delivery" name="delivery" value="delivery">
+                    <label for="delivery">Delivery</label><br>
+                    <input type="radio" id="eat-in" name="delivery" value="eat-in">
+                    <label for="eat-in">Eat In</label><br>
+                </fieldset>
+            </div>
+            <!-- Personal Information -->
+            
+
+            <!-- Submit Button -->
+            <div class="btn">
+                <button type="submit">Submit Order</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pizza Palace</p>
+        <p>Enjoy our delicious pizza!<br>
+    </footer>    
+</body>
+</html>
